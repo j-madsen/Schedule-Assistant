@@ -1,6 +1,6 @@
-# Schedule-Assistant
+# Schedule Assistant
 
-This is a GUI-based application created using Java, Java FX, and MySQL. It is an appointment and customer management system that allows the user to add, modify, or delete appointments and customers. The application connects to a local MySQL database where the data is stored. Local Date/Time functionality is included, as all time is displayed to the user in their local military time. Time in the database is stored in UTC. The user must input valid credentials to access the system, and it will alert the user if there is an upcoming appointment within 15 minutes of the login time. Appointments can be filtered by week, date, or month. Specific reports can be generated displaying the number of appointments by month and type, appointments by the contact, and customers by their country location. Overlapping appointments and appointments outside of business hours (set from 8:00 a.m. to 10:00 p.m. EST) are not allowed. A text file is also generated tracking login activity. The Model View Controller (MVC) design pattern was utilized to develop the application.
+This is a GUI-based application created using Java, Java FX, and MySQL. It is an appointment and customer management system that allows the user to add, modify, or delete appointments and customers. The application connects to a local MySQL database where the data is stored. Local Date/Time functionality is included, as all time is displayed to the user in their local military time. Time is converted and stored in the database in UTC. The user must input valid credentials to access the system, and it will alert the user if there is an upcoming appointment within 15 minutes of the login time. Appointments can be filtered by week, date, or month. Specific reports can be generated displaying the number of appointments by month and type, appointments by the contact, and customers by their country location. Overlapping appointments and appointments outside of business hours (set from 8:00 a.m. to 10:00 p.m. EST) are not allowed. A text file is also generated tracking login activity. The Model View Controller (MVC) design pattern was utilized to develop the application.
 
 # Demo
 
@@ -39,23 +39,27 @@ Modifying or adding an appointment outside of business hours will prompt an erro
 
 They will also prompt an error if the appointment overlaps with another:
 
-![image](https://user-images.githubusercontent.com/77899871/153333558-b4b6d993-4b9b-442e-87ec-93744c9bd71c.png)
+![image](https://user-images.githubusercontent.com/77899871/153335473-8e4fcb9e-82e6-49f6-9a3d-5841b9b278f8.png)![Uploading image.png…]()
 
 The add customer screen:
 
 ![image](https://user-images.githubusercontent.com/77899871/153333398-a5385e85-2771-4014-8028-de3ca35c1d13.png)
 
-Both customers and appointments can be deleted. The user will be prompted to confirm the deletion, along with any cancellations or saves. If the deletion is confirmed, an alert will provide the deleted appointment information:
+Both customers and appointments can be deleted. The user will be prompted to confirm the deletion, along with any cancellations or saves. If an apppointment deletion is confirmed, an alert will provide the deleted appointment information:
 
 ![image](https://user-images.githubusercontent.com/77899871/153333839-5be8eeb1-5a30-45c1-8b83-0311c08b8479.png)
 ![image](https://user-images.githubusercontent.com/77899871/153333933-da8a1a87-8fc6-48ed-9123-72ff0fdefac4.png)
 
 Selecting the reports button from the main screen will bring the user to the first report. It displays the number of appointments by appointment type and month:
+
 ![image](https://user-images.githubusercontent.com/77899871/153334477-80720e8b-2ffd-4237-8c33-29b301e995bd.png)
 
 Appointment schedule by contact and customers by country location can also be viewed:
+
 ![image](https://user-images.githubusercontent.com/77899871/153334733-5a49c498-cf48-480e-85d1-38de1dce2750.png)
 ![image](https://user-images.githubusercontent.com/77899871/153334765-814f2b97-e16e-4681-9161-f68ecc8d3ab8.png)
 
+# Installation
+- Due to the application utilizing a local MySQL database to access and store data, installation is not available at this time.
 
 
